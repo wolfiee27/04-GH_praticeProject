@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install all the dependence
-        run: npm ci
+        run: npm install
       - name: run the lint
         run: npm run lint
       - name: run the test
