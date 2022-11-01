@@ -1,11 +1,11 @@
-name: Workflow 1
+name: Deployment exercise one
 on: push
 jobs: 
-  job1:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: get the code inside the Workflow
-        run: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: install all the dependence
         run: npm install
       - name: run the lint
