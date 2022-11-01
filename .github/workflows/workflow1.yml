@@ -4,6 +4,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: get the code inside the Workflow
+        run: actions/checkout@v3
       - name: install all the dependence
         run: npm install
       - name: run the lint
